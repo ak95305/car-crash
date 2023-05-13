@@ -28,7 +28,7 @@ function gamePlay() {
     if (player.start) {
 
         startScreen.style.display = "none";
-        score.innerHTML = "Score "+ player.score;
+        score.innerHTML = "Score "+ player.score + "--" + player.speed;
         let car = document.querySelector(".my-car");
 
         moveLines();
@@ -47,8 +47,8 @@ function gamePlay() {
         car.style.top = player.y + "px";
         car.style.left = player.x + "px";
 
-        window.requestAnimationFrame(gamePlay);
         player.score++;
+        window.requestAnimationFrame(gamePlay);
     }
 }
 
