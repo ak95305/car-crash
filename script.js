@@ -97,7 +97,6 @@ function isCollide(myCar, enemyCar) {
 function endGame(){
     player.start = false;
     startScreen.style.display = "block";
-    startScreen.textContent += " again";
 }
 
 // START GAME
