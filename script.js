@@ -103,6 +103,7 @@ function endGame(){
 function start() {
     gameArena.innerHTML = "";
     player.score = 0;
+    player.speed = 5;
 
     // Car Create
     let car = document.createElement("div");
